@@ -1,0 +1,51 @@
+.aboutme_container {
+  padding: 10%;
+  height: 100vh;
+  display: flex;
+}
+
+.aboutme_left {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+}
+.selfpic {
+  padding: 3rem;
+  width: 60%;
+  aspect-ratio: 1/1.4;
+}
+.aboutme_right {
+  padding: 3rem;
+  font-size: 1.2rem;
+  width: 50%;
+  height: 100%;
+}
+.aboutme_right h1 {
+  color: #ab873f;
+}
+.aboutme_right p {
+  color: #8b939d;
+  padding: 2rem 0;
+}
+
+@media (max-width: 1248px) {
+  .aboutme_container {
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+  }
+  .aboutme_left,
+  .aboutme_right {
+    width: 100%;
+  }
+  .aboutme_left {
+    justify-content: center;
+  }
+  .aboutme_right h1 {
+    font-size: 1.5rem;
+  }
+  .aboutme_right p {
+    font-size: .7rem;
+  }
+}

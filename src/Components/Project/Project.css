@@ -1,0 +1,131 @@
+.project_container {
+  width: 90%;
+  background: #0d1117;
+  border-radius: 0.7rem;
+  border: 1px solid #212d3a;
+  padding: 1.5rem;
+  position: absolute;
+  opacity: 0.5;
+  animation: slideIn 1s forwards;
+}
+
+.back_projects {
+  animation: slideout 1s forwards;
+}
+
+.inside_project a:-webkit-any-link {
+  color: #282319;
+}
+@keyframes slideout {
+  0% {
+   width: 100%;
+  top: 100px;
+  opacity: 1;
+  }
+  100% {
+    width: 90%;
+    top: 0px;
+    opacity: 0.5;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    width: 90%;
+    top: 0px;
+    opacity: 0.5;
+  }
+  100% {
+    width: 100%;
+    top: 100px;
+    opacity: 1;
+  }
+}
+
+.project_container:hover {
+  opacity: 0.8;
+}
+.back_projects:hover {
+  opacity: 1;
+}
+.title {
+  white-space: nowrap;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Ubuntu";
+}
+.title h1 {
+  color: #ab873f;
+}
+.title h2 {
+  color: #353e4a;
+}
+
+.inside_project {
+  width: 100%;
+  background-color: #0a0d12;
+  border: 1px solid #070a0f;
+  border-radius: 0.7rem;
+  margin-top: 0.8rem;
+  padding: 1rem;
+}
+.inside_project::after{
+  content: "";
+  position: absolute;
+  top: 55%;
+  transform: translate(-50% , -50%);
+  left: 50%;
+  width: 200px;
+  height: 200px;
+  box-shadow: 2px 2px 120px #2f4356;
+  z-index: -1;
+}
+
+.top_line {
+  color: #747c85;
+  font-size: 1.5rem;
+}
+.line {
+  margin-left: 0.5rem;
+  color: #747c85;
+  font-size: 1.5rem;
+  white-space: pre-wrap;
+  position: relative;
+}
+.line::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -0.5rem;
+  width: 2px;
+  height: 85%;
+  background-color: #181c25;
+}
+.seemore {
+  font-size: 1.5rem;
+  width: calc(100% + 2rem);
+  transform: translateX(-1rem);
+  margin: 0 0 2rem 0;
+  border: none;
+  color: #282319;
+  background: #8a6e35;
+  text-align: start;
+  padding: 0.1rem 1.1rem;
+}
+.seemore:hover {
+  background: #ab873f;
+}
+.seemore a:visited{
+  color: #282319;
+}
+@media (max-width: 700px) {
+  .top_line,.line,.seemore  {
+    font-size: 1rem;
+  }
+  .title h1,.title h2 {
+    font-size: 1.5rem;
+  }
+  
+}

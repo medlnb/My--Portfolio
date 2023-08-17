@@ -1,0 +1,92 @@
+.hello_container {
+  padding: 13%;
+  height: 100vh;
+  display: flex;
+}
+.left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+.left > * {
+  color: white;
+  font-family: "Ubuntu";
+}
+
+.right {
+  position: relative;
+  width: 50%;
+  overflow: visible;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.name {
+  font-size: 4rem;
+  margin: 0 10px;
+}
+.job {
+  margin: 0 10px;
+}
+.shifr {
+  color: #c9a6ee;
+}
+.code_container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+}
+.code {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #c9a6ee;
+}
+.code::placeholder {
+  color: #5c5265;
+}
+.code:focus {
+  outline: none;
+  color: #c9a6ee;
+}
+.description {
+  width: 60%;
+  font-size: 1.7rem;
+}
+
+@media (max-width: 1248px) {
+  .hello_container {
+    flex-direction: column;
+    justify-content: space-between;
+    height: 85rem;
+    padding: 5rem 5% 5rem 5%;
+    gap: 5rem;
+  }
+  .right,
+  .left {
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+  }
+  .left {
+    height: 30%;
+  }
+  .name {
+    font-size: 2rem;
+  }
+  .hello_ {
+    font-size: 1rem;
+  }
+  .job {
+    font-size: 1rem;
+  }
+  .description {
+    font-size: 1.3rem;
+  }
+}

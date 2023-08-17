@@ -1,0 +1,21 @@
+.Skills {
+  padding: 5rem 4%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 4rem;
+  row-gap: 5rem;
+}
+.loadingg{
+  position: absolute;
+  top: 10rem;
+  left: 50%;
+}
+
+@media (max-width : 1248px){
+  .Skills {
+  grid-template-columns: repeat(auto-fit,minmax(110px,1fr));
+  gap: 10px;
+  row-gap: 20px;
+} 
+
+}

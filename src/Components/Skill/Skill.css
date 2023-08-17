@@ -1,0 +1,80 @@
+.skill_darkmode {
+  background-color: none;
+  border-radius: 3%;
+  border: 0.2px solid white;
+  text-align: center;
+  box-shadow: 1px 1px 7px white;
+  padding: 1rem 1rem 1rem 1rem;
+  background: rgba(128, 128, 128, 0.164);
+  position: relative;
+}
+
+.skill-logo {
+  width: 100%;
+  aspect-ratio: 1/1;
+  padding: 0rem 0rem 1rem 0rem;
+}
+
+.skill-name_darkmode {
+  color: white;
+  position: absolute;
+  bottom: 1rem;
+  font-size: 1.3rem;
+  left: 50%;
+  transform: translateX(-50%) scaleX(1);
+  transition: 0.5s;
+}
+
+.skill_darkmode:hover .skill-name_darkmode {
+  transform: translateX(-50%) scaleX(0);
+}
+
+.skill-lvl_darkmode {
+  bottom: 0.5rem;
+  visibility: hidden;
+  opacity: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  transform: scaleX(0);
+}
+
+.skill_darkmode:hover .skill-lvl_darkmode {
+  transform: scaleX(1);
+  bottom: 0.5rem;
+  visibility: visible;
+  transition: 0.5s 0.5s;
+  opacity: 1;
+}
+
+.persontaj_darkmode {
+  color: white;
+  font-size: 25px;
+}
+
+.graph {
+  width: 70%;
+  height: 20px;
+  border-bottom: 1px solid white;
+}
+
+.graphpersontaj {
+  height: 100%;
+  width: 0%;
+  transition: width 0.5s 1s;
+}
+
+@media (max-width: 768px ){
+  
+.skill-name_darkmode ,.persontaj_darkmode {
+  font-size: 1rem;
+}
+.persontaj_darkmode {
+  font-size: .7rem;
+}
+
+.graph {
+  height: 10px;
+  margin-left: 2px ;
+}
+}

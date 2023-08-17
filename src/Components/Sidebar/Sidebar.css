@@ -1,0 +1,41 @@
+.sidebar_container {
+  height: 100%;
+  width: 200px;
+}
+ul {
+  text-decoration: none;
+  list-style-type: none;
+}
+.button,
+.button_clicked {
+  background: none;
+  padding: 0.5rem;
+  border: none;
+  color: #929193;
+  font-size: 1.4rem;
+  position: relative;
+  white-space: nowrap;
+  transition: padding .5s;
+}
+.button_clicked {
+  font-size: 1.5rem;
+  color: #c09f5e;
+  padding: 0.5rem 1rem;
+}
+.button:hover {
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+}
+.button::after,
+.button_clicked::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -20px;
+  height: 100%;
+  width: 0.1rem;
+  background: #929193;
+}
+.button_clicked::after {
+  background: #c09f5e;
+}

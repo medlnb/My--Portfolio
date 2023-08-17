@@ -1,0 +1,80 @@
+.footer {
+  width: 100%;
+  background: #010409;
+  border-top: 2px solid #282c38;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.findmein {
+  display: inline-block;
+  font-size: 1.5rem;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-right: 2px solid #282c38;
+}
+
+.mobile-footer, .links{
+  display: inline-block;
+}
+
+.menu{
+  border: none;
+  background: none;
+}
+.menu:hover {
+  background-color: #2b3544;
+}
+
+
+.fa-brands,
+.fa-solid {
+  color: white;
+  border-right: 2px solid #282c38;
+  font-size: 1.5rem;
+  padding: 0.6rem;
+}
+.fa-solid {
+  display: none;
+}
+.fa-brands:hover {
+  background-color: #2b3544;
+}
+.todaysdate,
+.email {
+  color: white;
+  font-size: 1.5rem;
+  padding: 0.5rem 1.5rem;
+}
+
+
+@media (max-width: 931px) {
+  .todaysdate {
+    display: none;
+  }
+  .fa-solid {
+    display: inline-block;
+    font-size: 1rem;
+  }
+
+
+  .links{
+    display: none;
+    position: absolute;
+    left: 0;
+    bottom: 2.5rem;
+    background: #010409;
+  }
+  .email {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+  .findmein {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+
+}
