@@ -1,5 +1,5 @@
 const getProjects = async () => {
-  const response = await fetch("https://myportfolio-backend-4yge.onrender.com/api/projects")
+  const response = await fetch("https://myportfolio-backend-knpr.onrender.com/api/projects")
   
 
   if (!response.ok)
