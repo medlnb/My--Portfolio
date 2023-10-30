@@ -7,7 +7,7 @@ function Project_in_page({content}) {
   })
   return (
     <>
-      <img src={content.img} className={content.landscape ? 'img' :"img_landscape"} />
+      <img src={content.img} loading="lazy" className={content.landscape ? 'img' :"img_landscape"} />
       <div className="info">
         <h4>{content.page_shown}</h4>
         <h2>{content.project_name}</h2>
