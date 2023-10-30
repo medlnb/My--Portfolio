@@ -32,14 +32,14 @@ function Projects_Page() {
       />
 
       {projects && !loading &&
-        <Sidebar
-          Projects={projects}
-          project_index={projectshowed}
-          changeprojectshowed={HandleCLick} />}
-      
-      {projects && !loading &&
-        <Project_in_page
-          content={projects[projectshowed]} />}
+        <>
+          <Sidebar
+            Projects={projects}
+            project_index={projectshowed}
+            changeprojectshowed={HandleCLick} />
+          <Project_in_page
+            content={projects[projectshowed]} />
+        </>}
     </div>
   )
 }
