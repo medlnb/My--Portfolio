@@ -8,7 +8,6 @@ function Hello() {
   
   return (
     <div className='hello_container'>
-
       <Left />
       <Right />
     </div>

@@ -6,21 +6,24 @@
   padding: 1.5rem;
   position: absolute;
   opacity: 0.5;
-  animation: slideIn 1s forwards;
+  animation: slideIn .7s forwards;
 }
 
 .back_projects {
-  animation: slideout 1s forwards;
+  animation: slideout .7s forwards;
 }
 
 .inside_project a:-webkit-any-link {
   color: #282319;
 }
+.title {
+  cursor: pointer;
+}
 @keyframes slideout {
   0% {
-   width: 100%;
-  top: 100px;
-  opacity: 1;
+    width: 100%;
+    top: 100px;
+    opacity: 1;
   }
   100% {
     width: 90%;
@@ -70,11 +73,11 @@
   margin-top: 0.8rem;
   padding: 1rem;
 }
-.inside_project::after{
+.inside_project::after {
   content: "";
   position: absolute;
   top: 55%;
-  transform: translate(-50% , -50%);
+  transform: translate(-50%, -50%);
   left: 50%;
   width: 200px;
   height: 200px;
@@ -117,15 +120,17 @@
 .seemore:hover {
   background: #ab873f;
 }
-.seemore a:visited{
+.seemore a:visited {
   color: #282319;
 }
 @media (max-width: 700px) {
-  .top_line,.line,.seemore  {
+  .top_line,
+  .line,
+  .seemore {
     font-size: 1rem;
   }
-  .title h1,.title h2 {
+  .title h1,
+  .title h2 {
     font-size: 1.5rem;
   }
-  
 }
