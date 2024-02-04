@@ -1,51 +1,46 @@
 .aboutme_container {
-  padding: 10%;
-  height: 100vh;
+  padding: 0 5rem;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5rem;
+  height: 100vh;
 }
 
-.aboutme_left {
-  display: flex;
-  align-items: center;
-  width: 50%;
-  height: 100%;
-}
 .selfpic {
-  padding: 3rem;
-  width: 60%;
+  width: 25rem;
+  max-height: 90%;
   aspect-ratio: 1/1.4;
 }
 .aboutme_right {
-  padding: 3rem;
   font-size: 1.2rem;
-  width: 50%;
-  height: 100%;
 }
 .aboutme_right h1 {
   color: #ab873f;
 }
 .aboutme_right p {
   color: #8b939d;
-  padding: 2rem 0;
+  padding: 2rem;
 }
 
-@media (max-width: 1248px) {
+@media (max-width: 1250px) {
   .aboutme_container {
     flex-direction: column;
     justify-content: space-between;
-    padding: 0;
+    padding: 3rem;
   }
-  .aboutme_left,
   .aboutme_right {
-    width: 100%;
+    display: grid;
+    place-items: center;
+    height: 100%;
   }
-  .aboutme_left {
-    justify-content: center;
+  .selfpic {
+    display: none;
   }
   .aboutme_right h1 {
     font-size: 1.5rem;
   }
   .aboutme_right p {
-    font-size: .7rem;
+    font-size: 0.7rem;
   }
 }

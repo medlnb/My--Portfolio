@@ -17,12 +17,12 @@
   padding: 0.8rem 5rem;
   position: relative;
 }
-.active_navbar_element {
+.active {
   background: #0d1117;
   color: #c09f5e;
 }
 
-.active_navbar_element::after {
+.active::after {
   content: "";
   display: block;
   position: absolute;
@@ -32,7 +32,7 @@
   height: 4px;
   background-color: #6f4453;
 }
-.active_navbar_element::before {
+.active::before {
   content: "";
   display: block;
   position: absolute;

@@ -1,5 +1,5 @@
 const getProjects = async () => {
-  const response = await fetch("https://myportfolio-backend-knpr.onrender.com/api/projects")
+  const response = await fetch("https://my-portfolio-backend-cyan.vercel.app/api/projects")
   
 
   if (!response.ok)
