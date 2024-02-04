@@ -5,7 +5,7 @@ import selfPic from "../../assets/selfpic.png";
 function About_me() {
   return (
     <div className="aboutme_container">
-      <img className="selfpic" src={selfPic} />
+      <img className="selfpic" src={selfPic} loading="lazy" />
 
       <div className="aboutme_right">
         <div>
