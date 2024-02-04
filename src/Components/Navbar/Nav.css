@@ -1,6 +1,9 @@
 .headers {
   width: 100%;
   position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background: #010409;
   border-top: 2px solid #1b2028;
   border-bottom: 2px solid #1b2028;
@@ -45,8 +48,27 @@
 a:-webkit-any-link {
   text-decoration: none;
 }
+
+.resume--link {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  color: white;
+  font-size: 1.2rem;
+  padding: 0.8rem 5rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.resume--link:hover {
+  color: #c09f5e;
+}
+
 @media (max-width: 940px) {
   .notactive_navbar_element {
+    font-size: 0.8rem;
+    padding: 0.8rem 0.5rem;
+  }
+  .resume--link {
     font-size: 0.8rem;
     padding: 0.8rem 0.5rem;
   }
